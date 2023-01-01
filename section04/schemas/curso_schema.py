@@ -2,11 +2,11 @@ from typing import Optional
 
 from pydantic import BaseModel as SCBaseModel
 
-class CursoSchema(SCBaseModel):
+class CourseSchema(SCBaseModel):
     id: Optional[int]
-    titulo: str
-    aulas: int
-    horas: int
+    title: str
+    classes: int
+    hours: int
 
     class Config:
         orm_mode = True
